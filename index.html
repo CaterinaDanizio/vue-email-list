@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mailing list with Vue & API</title>
+
+    <!-- AXIOS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js">
+    </script>
+
+    <!-- VUE -->
+    <script src="https://cdn.jsdelivr.net/npm/vue">
+    </script>
+
+  </head>
+  <body>
+    <div id="app">
+      <!-- Bottone per generare email -->
+      <!-- <button type="button" name="button" @click="emailGen"> Genera email</button> -->
+        <ul v-for="(item, index) in mailingList">
+          <li> {{ item }} </li>
+        </ul>
+    </div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/script.js">
+
+    </script>
+  </body>
+</html>
