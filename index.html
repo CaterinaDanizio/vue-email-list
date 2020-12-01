@@ -16,9 +16,9 @@
   <body>
     <div id="app">
       <!-- Bottone per generare email -->
-      <!-- <button type="button" name="button" @click="emailGen"> Genera email</button> -->
-        <ul v-for="(item, index) in mailingList">
-          <li> {{ item }} </li>
+      <button type="button" name="button" @click="emailGen"> Genera email</button>
+        <ul>
+          <li v-for="(item, index) in mailingList"> {{ item }} </li>
         </ul>
     </div>
 
